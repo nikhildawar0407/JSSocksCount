@@ -1,0 +1,66 @@
+<html>
+<head>
+	<script>
+		function socks(){
+			var socks=[1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4,4,5,5,5,5,5,6,6,6];
+			var  total_pair=0,count1=0,count2=0,count3=0,count4=0,count5=0,count6=0;
+			//var i;
+			console.log(socks.length);
+			//alert('control came here'+socks.length);
+			for(i=0;i<socks.length;i++){
+				socks[i];
+				if(socks[i]==1){
+						count1=count1+1;
+				}
+				if(socks[i]==2){
+						count2=count2+1;
+				}
+				if(socks[i]==3){
+						count3=count3+1;
+				}
+				if(socks[i]==4){
+						count4=count4+1;
+				}
+				if(socks[i]==5){
+						count5=count5+1;
+				}
+				if(socks[i]==6){
+						count6=count6+1;
+				}
+			}
+			count1=parseInt(count1/2);
+			count2=parseInt(count2/2);
+			count3=parseInt(count3/2);
+			count4=parseInt(count4/2);
+			count5=parseInt(count5/2);
+			count6=parseInt(count6/2);
+			total_pair=count1+count2+count3+count4+count5+count6;
+			document.getElementById("socks_pair").innerHTML = socks.length;
+			document.getElementById("socks1").innerHTML ="total pair of socks 1 are: "+ count1;
+			document.getElementById("socks2").innerHTML ="total pair of socks 2 are: "+ count2;
+			document.getElementById("socks3").innerHTML ="total pair of socks 3 are: "+ count3;
+			document.getElementById("socks4").innerHTML ="total pair of socks 4 are: "+ count4;
+			document.getElementById("socks5").innerHTML ="total pair of socks 5 are: "+ count5;
+			document.getElementById("socks6").innerHTML ="total pair of socks 6 are: "+ count6;
+			document.getElementById("socks").innerHTML ="total pair of socks are: "+ total_pair;
+			
+		}
+	</script>
+</head>
+<body>
+	<p>array of socks to count total pair of socks: </p>
+	<p id="socks_pair"></p>
+	<p id="socks1"></p>
+	<p id="socks2"></p>
+	<p id="socks3"></p>
+	<p id="socks4"></p>
+	<p id="socks5"></p>
+	<p id="socks6"></p>
+	<p id="socks"> </p>
+	<script>
+		document.write("click on the button below to check the pair of socks");
+	</script>	
+		<input type = "button" onclick = "socks()" value = "Click Here">
+	
+</body>
+</html>
